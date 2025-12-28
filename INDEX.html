@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <!-- links-->
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ToDo input section-->
+    <section class="todo-input">
+      <h1 class="section-title">TodoInput</h1>
+
+      <div class="input-container">
+        <div class="input-icon">
+          <i class="bx bx-spreadsheet icon"></i>
+          <input class="text-box" type="text" placeholder="New todo" />
+        </div>
+        <!-- We'll add the error here,e -->
+        <button class="add-task" id="add">Add new task</button>
+      </div>
+    </section>
+
+    <section class="todo-list">
+      <h1 class="section-title">Todo List</h1>
+
+      <div class="status">
+        <button class="status-btn active">All</button>
+        <button class="status-btn">Done</button>
+        <button class="status-btn">Todo</button>
+      </div>
+
+      <div class="lists-container">
+        <div class="list"></div>
+      </div>
+
+      <div class="delete-btns">
+        <button class="delete">Delete Done Tasks</button>
+        <button class="delete">Delete All Tasks</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
